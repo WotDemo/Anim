@@ -5,133 +5,15 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/main_activity_parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#e6e6e6"
-        android:padding="15dp">
-
-        <LinearLayout
-            android:id="@+id/main_activity_qq"
-            android:layout_width="wrap_content"
-            android:visibility="invisible"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@mipmap/ic_launcher" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:text="QQ" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/main_activity_wx"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:visibility="invisible"
-            android:layout_toEndOf="@+id/main_activity_qq"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@mipmap/ic_launcher" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:text="微信" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/main_activity_dd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:visibility="invisible"
-            android:layout_toEndOf="@+id/main_activity_wx"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@mipmap/ic_launcher" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:text="钉钉" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/main_activity_wb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/main_activity_qq"
-            android:layout_marginTop="20dp"
-            android:visibility="invisible"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@mipmap/ic_launcher" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:text="微博" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/main_activity_friend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="invisible"
-            android:layout_below="@+id/main_activity_wx"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_toEndOf="@+id/main_activity_wb"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@mipmap/ic_launcher" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:text="朋友圈" />
-        </LinearLayout>
-    </RelativeLayout>
-
     <Button
-        android:id="@+id/main_activity_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/activity_main_launch_anim"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="100dp"
-        android:text="展开"
+        android:text="发射动画演示"
         android:textSize="18sp" />
 </LinearLayout>
